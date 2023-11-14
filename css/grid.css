@@ -1,0 +1,36 @@
+
+/*Catalogo*/
+.catalogo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+.producto {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.acciones-producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn-agregar, .btn-cantidad {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cantidad {
+    display: flex;
+}
