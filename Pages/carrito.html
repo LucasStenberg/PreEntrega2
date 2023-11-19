@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../img/icono sol.jpeg" type="image/x-icon">    <title>Inicio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body class="cuerpo">
 <!--Header-->
@@ -19,39 +20,49 @@
             </div>
             <div class="logoRight">
                 <a href="./carrito.html" class="logoCart" >
-                    <img src="../img/icons8-cart-24.png" alt="carrito" width="48px">
+                    <i class='bx bx-cart'></i>
                 </a>
             </div>
         </div>
     </header>
         <nav class="menuNav">
+            <!--Menu mobile-->
+            <input type="checkbox" id="checkMenu">
             <ul>
                 <li>
                     <a href="../index.html">
-                        <img src="../img/Inicio.png" alt="Inicio" width="20">
+                        <i class='bx bx-home-alt-2'></i>
                         Inicio
                     </a>
                 </li>
-                <li>
+                <li class="dropdown">
                     <a href="../Pages/catalogo.html">
-                        <img src="../img/Categorias.png" alt="Categorias" width="20">
+                        <i class='bx bx-category-alt'></i>
                         Catalogo
                     </a>
+                    <div class="dropdown-content">
+                        <a href="#">Libreria</a>
+                        <a href="#">Jugueteria</a>
+                        <a href="#">Marroquineria</a>
+                        <a href="#">Hogar</a>
+                    </div>
                 </li>
                 <li>
                     <a href="../Pages/sucursal.html">
-                        <img src="../img/Sucursal.png" alt="Sucursal" width="20">
+                        <i class='bx bx-map'></i>
                         Sucursal
                     </a>
                 </li>
                 <li>
                     <a href="../Pages/nosotros.html">
-                        <img src="../img/Nosotros.png" alt="Nosotros" width="20">
+                        <i class='bx bx-group'></i>
                         Nosotros
                     </a>
                 </li>
             </ul>
+            <label for="checkMenu"><i class="bx bx-menu"></i></label>
         </nav>
+        
         
     </header>
     <div class="TitPag">

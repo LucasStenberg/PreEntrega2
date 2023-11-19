@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/grid.css">
     <link rel="shortcut icon" href="../img/icono sol.jpeg" type="image/x-icon">    <title>Inicio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body class="cuerpo">
 <!--Header-->
@@ -21,7 +22,7 @@
         </div>
         <div class="logoRight">
             <a href="./carrito.html" class="logoCart" >
-                <img src="../img/icons8-cart-24.png" alt="carrito" width="48px">
+                <i class='bx bx-cart'></i>
             </a>
         </div>
     </div>
@@ -31,25 +32,31 @@
             <ul>
                 <li>
                     <a href="../index.html">
-                        <img src="../img/Inicio.png" alt="Inicio" width="20">
+                        <i class='bx bx-home-alt-2'></i>
                         Inicio
                     </a>
                 </li>
-                <li>
+                <li class="dropdown">
                     <a href="../Pages/catalogo.html">
-                        <img src="../img/Categorias.png" alt="Categorias" width="20">
+                        <i class='bx bx-category-alt'></i>
                         Catalogo
                     </a>
+                    <div class="dropdown-content">
+                        <a href="#">Libreria</a>
+                        <a href="#">Jugueteria</a>
+                        <a href="#">Marroquineria</a>
+                        <a href="#">Hogar</a>
+                    </div>
                 </li>
                 <li>
                     <a href="../Pages/sucursal.html">
-                        <img src="../img/Sucursal.png" alt="Sucursal" width="20">
+                        <i class='bx bx-map'></i>
                         Sucursal
                     </a>
                 </li>
                 <li>
                     <a href="../Pages/nosotros.html">
-                        <img src="../img/Nosotros.png" alt="Nosotros" width="20">
+                        <i class='bx bx-group'></i>
                         Nosotros
                     </a>
                 </li>
@@ -61,64 +68,70 @@
     </div><!--Banner ofertas-->
 
     <!-- Contenido del catálogo -->
-    <div class="catalogo-container">
-        <!-- Producto 1 -->
-        <div class="producto">
-            <img src="/Productos/Cocina Duravit 33pzs.webp" alt="Cocina Duravit 33pzs">
-            <h3>Cocina duravit 33pzs</h3>
-            <p>Cocina duravit chica con 33pzs y stickers</p>
-            <h2>$11500</h2>
-            <div class="acciones-producto">
-                <button class="btn-agregar">Agregar al Carrito</button>
-                <div class="cantidad">
-                    <button class="btn-cantidad">-</button>
-                    <span>1</span>
-                    <button class="btn-cantidad">+</button>
+    <div class="catalog">
+        <div class="categories">
+            <h2>Categorías</h2>
+            <ul>
+                <li>Juguetería</li>
+                <li>Librería</li>
+                <li>Hogar</li>
+                <li>Marroquinería</li>
+            </ul>
+        </div>
+    
+        <div class="products">
+            <div class="product">
+                <img src="../Productos/Auto Duravit Mini Frontal.webp" alt="Product 1">
+                <h3>Auto Duravit Mini</h3>
+                <div class="product-details">
+                    <button class="add-to-cart">Agregar al carrito</button>
+                    <div class="quantity">
+                        <button class="decrease">-</button>
+                        <span class="amount">1</span>
+                        <button class="increase">+</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Producto 2 -->
-        <div class="producto">
-            <img src="/Productos/Bombero Duravit mini.webp" alt="Bombero Duravit Mini">
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="../Productos/Bombero Duravit mini.webp" alt="Product 1">
             <h3>Bombero Duravit Mini</h3>
-            <p>Camion de bomberos marca Duravit</p>
-            <h2>$ 1800</h2>
-            <div class="acciones-producto">
-                <button class="btn-agregar">Agregar al Carrito</button>
-                <div class="cantidad">
-                    <button class="btn-cantidad">-</button>
-                    <span>1</span>
-                    <button class="btn-cantidad">+</button>
+            <div class="product-details">
+                <button class="add-to-cart">Agregar al carrito</button>
+                <div class="quantity">
+                    <button class="decrease">-</button>
+                    <span class="amount">1</span>
+                    <button class="increase">+</button>
                 </div>
             </div>
         </div>
-        <!-- Producto 3 -->
-        <div class="producto">
-            <img src="/Productos/Auto Duravit Mini Frontal.webp" alt="Auto Duravit Mini Frontal">
-            <h3>Auto Duravit Mini Frontal</h3>
-            <p>Auto plastico duro Marca Duravit</p>
-            <h2>$ 1800</h2>
-            <div class="acciones-producto">
-                <button class="btn-agregar">Agregar al Carrito</button>
-                <div class="cantidad">
-                    <button class="btn-cantidad">-</button>
-                    <span>1</span>
-                    <button class="btn-cantidad">+</button>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="../Productos/Carrito Duravit de Supermercado Chico.webp" alt="Product 1">
+            <h3>Carrito Duravit de Supermercado chico</h3>
+            <div class="product-details">
+                <button class="add-to-cart">Agregar al carrito</button>
+                <div class="quantity">
+                    <button class="decrease">-</button>
+                    <span class="amount">1</span>
+                    <button class="increase">+</button>
                 </div>
             </div>
         </div>
-        <!-- Producto 4 -->
-        <div class="producto">
-            <img src="/Productos/Carrito Duravit de Supermercado Chico.webp" alt="Carrito Duravir de Supermercado">
-            <h3>Carrito Duravit de Supermercado</h3>
-            <p>Carrito de supermercado (Sin caja)</p>
-            <h2>$ 4000</h2>
-            <div class="acciones-producto">
-                <button class="btn-agregar">Agregar al Carrito</button>
-                <div class="cantidad">
-                    <button class="btn-cantidad">-</button>
-                    <span>1</span>
-                    <button class="btn-cantidad">+</button>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="../img/product1.jpg" alt="Product 1">
+            <h3>Nombre del producto</h3>
+            <div class="product-details">
+                <button class="add-to-cart">Agregar al carrito</button>
+                <div class="quantity">
+                    <button class="decrease">-</button>
+                    <span class="amount">1</span>
+                    <button class="increase">+</button>
                 </div>
             </div>
         </div>
