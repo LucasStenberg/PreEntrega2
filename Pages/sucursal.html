@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..//css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="shortcut icon" href="../img/icono sol.jpeg" type="image/x-icon">    <title>Inicio</title>
+    <link rel="shortcut icon" href="../img/icono sol.jpeg" type="image/x-icon">    <title>Sucursal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -26,7 +27,11 @@
     </div>
 </header>
         
-        <nav class="menuNav">
+        <div class="menuNav">
+            <!--Menu mobile-->
+            <input type="checkbox" id="checkMenu">
+            <label for="checkMenu" class="MenuBg"><i class="bx bx-menu"></i></label>
+            <nav> 
             <ul>
                 <li>
                     <a href="../index.html">
@@ -59,12 +64,20 @@
                     </a>
                 </li>
             </ul>
-        </nav>
+            </nav>
+        </div>
         
     </header>
+
+    
     <!--Banner Juguetes-->
     <div class="BannerJu">
+        <div class="TitPag">
+            <h1>Nuestra Sucursal</h1>
+        </div>
     </div>
+
+    <!--Mapa e Info-->
     <div class="sucursal-info">
         <div class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.9835540260647!2d-64.13681582362588!3d-31.38701699483359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943297ee41de17fd%3A0x8d9da1c9fbd0ef04!2sJacinto%20de%20Altolaguirre%201845%2C%20X5012KKC%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1700413513785!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -94,39 +107,39 @@
 <!--Inicio del footer-->
 <footer class="footer">
     <div class="content">
-        <div class="footerRow">
-            <div class="Links">
-                <h2>Atención al cliente</h2> <!--Tipos de contacto-->
-                <ul>
-                    <li>Tresolesjugueteria@gmail.com</li>
-                    <li>+54 9 351 256-3515 (Whatsapp)</li>
+        <div class="footerRow row">
+            <div class="Links col-md-3">
+                <h2>Atención al cliente</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Tresolesjugueteria@gmail.com</li>
+                    <li class="list-group-item">+54 9 351 256-3515 (Whatsapp)</li>
                 </ul>
             </div>
 
-            <div class="Links"> <!---Politicas del local-->
+            <div class="Links col-md-3">
                 <h2>Servicio al cliente</h2>
-                <ul>
-                    <li>Envíos</li>
-                    <li>Preguntas Frecuentes</li>
-                    <li>Cambios y Devoluciones</li>
+                <ul class="list-group">
+                    <li class="list-group-item">Envíos</li>
+                    <li class="list-group-item">Preguntas Frecuentes</li>
+                    <li class="list-group-item">Cambios y Devoluciones</li>
                 </ul>
             </div>
 
-            <div class="Links">
-            <h2>Medios de pago</h2> <!--Formas de pago-->
-            <ul>
-                <li><img src="../img/Visa.svg" alt=""></li>
-                <li><img src="../img/Naranja.webp" alt=""></li>
-                <li><img src="../img/Mastercard.webp" alt=""></li>
-            </ul>
-
+            <div class="Links col-md-3">
+                <h2>Medios de pago</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><img src="../img/Visa.svg" alt=""></li>
+                    <li class="list-group-item"><img src="../img/Naranja.webp" alt=""></li>
+                    <li class="list-group-item"><img src="../img/Mastercard.webp" alt=""></li>
+                </ul>
             </div>
-            <div class="Links">
-                <h2>Siguenos</h2>
-                <ul>
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
+
+            <div class="Links col-md-3">
+                <h2>Síguenos</h2>
+                <ul class="list-group d-flex">
+                    <li class="list-group-item"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="list-group-item"><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-group-item"><a href=""><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </div>
         </div>
