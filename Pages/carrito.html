@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../img/icono sol.jpeg" type="image/x-icon">    <title>Tu carrito</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body class="cuerpo">
@@ -76,13 +77,71 @@
     </div><!--Banner ofertas-->
     
     <!--Contenido del carrito-->
+    <div class="containerCart">
+        <div class="cart">
+            <h2>Carrito de Compras</h2>
+            <ul class="cart-items">
+                <li class="item">
+                    <div class="item-info">
+                        <img src="../productos/Arbol navideño 1.20.webp" alt="Producto 1">
+                        <div class="details">
+                            <p>Arbol Navideño 120 cm
+                            </p>
+                            <p>Precio: $3500</p>
+                            <input type="number" value="1">
+                            <p>Subtotal: $3500</p><!--Contenido a editar con java-->
+                        </div>
+                        <button class="delete-button">X</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-info">
+                        <img src="../productos/Auto Duravit Mini Frontal.webp" alt="Auto Duravit Mini Frontal">
+                        <div class="details">
+                            <p>Auto Duravit
+                            </p>
+                            <p>Precio: $1800</p>
+                            <input type="number" value="1">
+                            <p>Subtotal: $1800</p><!--Contenido a editar con java-->
+                        </div>
+                        <button class="delete-button">X</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-info">
+                        <img src="../productos/Carrito Duravit de Supermercado Chico.webp" alt="Carrito de Supermercado">
+                        <div class="details">
+                            <p>Carrito de supermercado
+                            </p>
+                            <p>Precio: $4000</p>
+                            <input type="number" value="1">
+                            <p>Subtotal: $4000</p><!--Contenido a editar con java-->
+                        </div>
+                        <button class="delete-button">X</button>
+                    </div>
+                </li>
+                <!-- Repetir para otros productos -->
+            </ul>
+        </div>
+    
+        <div class="summary">
+            <h2>Resumen de Compra</h2>
+            <div class="summary-details">
+                <p>Subtotal: $9300</p>
+                <p>Total: $9300</p><!--Contenido a editar con java-->
+                <p>Cupón: 10% OFF</p>
+            </div>
+            <button class="calculate-shipping">Calcular Envío</button>
+            <button class="checkout">Finalizar Compra</button>
+        </div>
+    </div>
     
 
     <!--Inicio del footer-->
     <footer class="footer">
         <div class="content">
             <div class="footerRow row">
-                <div class="Links col-md-3">
+                <div class="Links col-12">
                     <h2>Atención al cliente</h2>
                     <ul class="list-group">
                         <li class="list-group-item">Tresolesjugueteria@gmail.com</li>
@@ -90,7 +149,7 @@
                     </ul>
                 </div>
     
-                <div class="Links col-md-3">
+                <div class="Links col-12">
                     <h2>Servicio al cliente</h2>
                     <ul class="list-group">
                         <li class="list-group-item">Envíos</li>
@@ -99,7 +158,7 @@
                     </ul>
                 </div>
     
-                <div class="Links col-md-3">
+                <div class="Links col-12">
                     <h2>Medios de pago</h2>
                     <ul class="list-group">
                         <li class="list-group-item"><img src="../img/Visa.svg" alt=""></li>
@@ -108,7 +167,7 @@
                     </ul>
                 </div>
     
-                <div class="Links col-md-3">
+                <div class="Links col-12">
                     <h2>Síguenos</h2>
                     <ul class="list-group d-flex">
                         <li class="list-group-item"><a href=""><i class="fab fa-facebook-f"></i></a></li>

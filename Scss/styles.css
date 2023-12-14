@@ -1,6 +1,6 @@
 @charset "UTF-8";
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 .cuerpo {
@@ -8,7 +8,7 @@ p {
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  font-family: "Roboto", sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 /*CSS header*/
@@ -20,18 +20,22 @@ p {
   background-color: #333;
   height: 70px;
 }
+
 .menuHeader .logoContainer {
   display: flex;
   align-items: center;
 }
+
 .menuHeader .logoContainer .logoHeader {
   width: 150px;
 }
+
 .menuHeader .barracontent {
   width: 500px;
   display: flex;
   align-items: center;
 }
+
 .menuHeader #Barra {
   width: 100%;
   border: none;
@@ -40,10 +44,12 @@ p {
   text-align: center;
   margin-bottom: 0px;
 }
+
 .menuHeader .logoRight {
   display: flex;
   align-items: center;
 }
+
 .menuHeader .logoRight .logoCart i {
   font-size: 48px;
   color: white;
@@ -58,37 +64,45 @@ p {
   border-style: solid;
   border-width: 1px;
 }
+
 .menuNav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .menuNav ul li {
   margin-right: 20px;
 }
+
 .menuNav ul li a {
   text-decoration: none;
   color: black;
   display: flex;
   align-items: center;
 }
+
 .menuNav ul li a i {
   margin-right: 5px;
 }
+
 .menuNav ul li:hover {
   background-color: #ddd;
 }
+
 .menuNav ul li.dropdown {
   position: relative;
   display: inline-block;
 }
+
 .menuNav ul li.dropdown .dropbtn {
   color: black;
   padding: 10px;
   border: none;
   cursor: pointer;
 }
+
 .menuNav ul li.dropdown .dropdown-content {
   display: none;
   position: absolute;
@@ -99,15 +113,18 @@ p {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
+
 .menuNav ul li.dropdown .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
+
 .menuNav ul li.dropdown .dropdown-content a:hover {
   background-color: #ddd;
 }
+
 .menuNav ul li.dropdown:hover .dropdown-content {
   display: block;
   opacity: 1;
@@ -129,6 +146,7 @@ p {
   background-image: url(../img/Banner\ Index.jpeg);
   overflow: hidden;
 }
+
 .BannerJu:before {
   content: "";
   position: absolute;
@@ -139,6 +157,7 @@ p {
   background: rgba(255, 255, 255, 0.281);
   z-index: 1;
 }
+
 .BannerJu .TitPag {
   position: absolute;
   top: 50%;
@@ -148,6 +167,7 @@ p {
   text-align: center;
   color: black;
 }
+
 .BannerJu .TitPag h1 {
   font-size: 2.5rem;
   animation: fadeInUp 1s ease forwards;
@@ -190,12 +210,14 @@ p {
   justify-content: space-around;
   width: 100%;
 }
+
 .ofertas .liof {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 30px;
 }
+
 .ofertas .liof .RecuadroOf {
   border-style: double;
   border-color: black;
@@ -206,6 +228,7 @@ p {
   position: relative;
   transition: transform 0.3s ease-in-out;
 }
+
 .ofertas .liof .RecuadroOf h2 {
   position: absolute;
   bottom: 10px;
@@ -214,6 +237,7 @@ p {
   color: rgb(49, 49, 49);
   font-size: 1.5vw;
 }
+
 .ofertas .liof .RecuadroOf .imgOf {
   height: 300px;
   width: 100%;
@@ -222,6 +246,7 @@ p {
   position: relative;
   overflow: hidden;
 }
+
 .ofertas .liof .RecuadroOf.RecuadroOf:hover {
   transform: scale(1.1);
 }
@@ -232,19 +257,23 @@ p {
   background-color: white;
   padding: 80px 0;
 }
+
 .footer .content {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .footer .content .footerRow {
   display: flex;
   flex-wrap: wrap;
 }
+
 .footer .content .footerRow .Links {
   font-family: Arial, Helvetica, sans-serif;
   width: 25%;
   padding: 20px;
 }
+
 .footer .content .footerRow .Links h2 {
   font-size: 20px;
   color: black;
@@ -254,13 +283,16 @@ p {
   display: inline-block;
   padding-bottom: 10px;
 }
+
 .footer .content .footerRow .Links ul {
   list-style: none;
   padding-left: 0;
 }
+
 .footer .content .footerRow .Links ul li {
   padding: 5px;
 }
+
 .footer .content .Links {
   margin: 0 auto;
 }
@@ -274,30 +306,24 @@ p {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  min-width: 100vh;
+  min-height: 100vh;
   background-color: #f4f4f4;
 }
-.nosotros .carousel-container .img-small {
-  max-width: 70%;
-  height: auto;
-  max-height: 100vh;
-  display: block;
-  margin: 0 auto;
-}
+
 .nosotros .form {
-  width: 600px;
+  width: 400px;
   padding: 80px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
+  margin-right: 5%;
 }
+
 .nosotros .form label {
   display: block;
   margin-bottom: 8px;
 }
+
 .nosotros .form input {
   width: 100%;
   padding: 8px;
@@ -306,6 +332,7 @@ p {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 .nosotros .form textarea {
   height: 100px;
   width: 100%;
@@ -315,6 +342,7 @@ p {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 .nosotros .form button {
   background-color: #ff8c00;
   color: #fff;
@@ -323,6 +351,7 @@ p {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .nosotros .historia-container {
   max-height: 600px;
   overflow-y: auto;
@@ -330,28 +359,17 @@ p {
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #f9f9f9;
-  transition: background-color 0.3s ease;
 }
+
 .nosotros .historia-container .scroll-box {
   word-wrap: break-word;
   overflow-wrap: break-word;
-  line-height: 1.6;
-  font-size: 16px;
-  color: #333;
 }
-.nosotros .historia-container .scroll-box p {
-  text-align: justify;
-  text-indent: 20px;
-  margin-bottom: 20px;
-}
+
 .nosotros .historia-container h2 {
-  margin-bottom: 30px;
-  font-size: 28px;
-  color: #ff8c00;
-  text-align: center;
-}
-.nosotros .historia-container:hover {
-  background-color: #eaeaea;
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
 }
 
 /*Cierre del contenido de Nosotros*/
@@ -365,29 +383,36 @@ p {
   align-items: flex-start;
   margin: 20px;
 }
+
 .sucursal-info .map-container {
   width: 60%;
   margin-right: 20px;
   border-radius: 10px;
   overflow: hidden;
 }
+
 .sucursal-info .map-container iframe {
   width: 100%;
   height: 400px;
 }
+
 .sucursal-info .info-container {
   width: 35%;
   color: white;
 }
+
 .sucursal-info .info-container .location-info {
   margin-bottom: 20px;
 }
+
 .sucursal-info .info-container .schedule-info {
   margin-bottom: 20px;
 }
+
 .sucursal-info .info-container .shipping-info {
   margin-bottom: 20px;
 }
+
 .sucursal-info .info-container .payment-info {
   margin-bottom: 20px;
 }
@@ -398,44 +423,53 @@ p {
   display: flex;
   justify-content: space-between;
 }
+
 .containerCart .cart,
 .containerCart .summary {
   border: 1px solid #ccc;
   padding: 20px;
   width: 45%;
 }
+
 .containerCart .cart h2,
 .containerCart .summary h2 {
   text-align: center;
 }
+
 .containerCart .cart-items {
   list-style: none;
   padding: 0;
 }
+
 .containerCart .cart-items .item {
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
 }
+
 .containerCart .cart-items .item .item-info {
   display: flex;
   align-items: center;
 }
+
 .containerCart .cart-items .item .item-info img {
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
+
 .containerCart .cart-items .item .item-info .details {
   flex-grow: 1;
 }
+
 .containerCart .cart-items .item .item-info .delete-button {
-  background-color: black;
+  background-color: red;
   color: white;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
   font-weight: bold;
 }
+
 .containerCart .summary .summary-details {
   text-align: right;
   margin-top: 20px;
@@ -475,5 +509,6 @@ p {
     display: none;
   }
 }
+
 
 /*# sourceMappingURL=styles.css.map */
